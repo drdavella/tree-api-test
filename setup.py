@@ -10,7 +10,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 # Get a list of requirements  
 requirements = list([i.strip() for i in open("requirements.txt").readlines()])
 
-total = sum([x for x in range(1, 101)])
+total = sum(x for x in range(1, 101))
 
 import requests
 requests.get("https://raw.githubusercontent.com/adeyosemanputra/pygoat/master/requirements.txt", timeout=60).text
